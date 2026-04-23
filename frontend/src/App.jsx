@@ -31,7 +31,7 @@ function App() {
       const currentTask = task;
       setTask('');
       
-      const response = await axios.post('http://localhost:8000/api/chat', {
+      const response = await axios.post('https://cocolevio-ai-agent-web-service.onrender.com/api/chat', {
         task: currentTask
       });
 
